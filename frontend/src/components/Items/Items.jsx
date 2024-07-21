@@ -1,5 +1,5 @@
 import react from 'react';
-import './Items'
+import './Items.css'
 const Items = (props) =>{
     return(
         <div className='item'>
@@ -7,10 +7,10 @@ const Items = (props) =>{
             <p>{props.name}</p>
             <div className='item-prices'>
                 <div className='item-prices-new'>
-                    {props.new_price}
+                    ₹{props.new_price}
                 </div>
                 <div className='item-prices-old'>
-                    {props.old_price}
+                    ₹{props.old_price}
                 </div>
 
             </div>

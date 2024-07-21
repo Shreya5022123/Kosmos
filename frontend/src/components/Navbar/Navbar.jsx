@@ -22,8 +22,8 @@ const Navbar = () => {
       </div>
       <div className="nav-center-2">
         <ul className="nav-menu-2">
-          <li>Go Live</li>
-          <li>Metaverse</li>
+          <li><Link to='/Golive'>Go Live</Link></li>
+          <li><Link to='/Metaverse'>Metaverse</Link></li>
         </ul>
       </div>
       <div className="nav-login-cart">

@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './components/Navbar/Navbar.jsx';
 import { Link } from 'react-router-dom';
@@ -8,25 +7,77 @@ import ShopCategory from './Pages/ShopCategory.jsx';
 import Product from './Pages/Product.jsx';
 import LoginSignup from './Pages/LoginSignup.jsx';
 import Cart from './Pages/Cart.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Metaverse from './Pages/Metaverse.jsx';
+import Golive from './Pages/Golive.jsx';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Shop/>}/>
-        <Route path='/Mens' element={<ShopCategory category="men"/>}/>
-        <Route path='/Womens' element={<ShopCategory category="women"/>}/>
-        <Route path='/Kids' element={<ShopCategory category="kid"/>}/>
-        <Route path='/Product' element={<Product/>}>
-          <Route path=':productId' element={<Product/>}/>
-        </Route>
-        <Route path='/Cart' element={<Cart/>}/>
-        <Route path='/login' element={<LoginSignup/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={
+            <>
+              <Navbar />
+              <Shop />
+              <Footer />
+            </>
+          }/>
+          <Route path='/Mens' element={
+            <>
+              <Navbar />
+              <ShopCategory category="men"/>
+              <Footer />
+            </>
+          }/>
+          <Route path='/Womens' element={
+            <>
+              <Navbar />
+              <ShopCategory category="women"/>
+              <Footer />
+            </>
+          }/>
+          <Route path='/Kids' element={
+            <>
+              <Navbar />
+              <ShopCategory category="kid"/>
+              <Footer />
+            </>
+          }/>
+          <Route path='/Product' element={
+            <>
+              <Navbar />
+              <Product />
+              <Footer />
+            </>
+          }>
+            <Route path=':productId' element={
+              <>
+                <Navbar />
+                <Product />
+                <Footer />
+              </>
+            }/>
+          </Route>
+          <Route path='/Cart' element={
+            <>
+              <Navbar />
+              <Cart />
+              <Footer />
+            </>
+          }/>
+          <Route path='/login' element={
+            <>
+              <Navbar />
+              <LoginSignup />
+              <Footer />
+            </>
+          }/>
+          <Route path='/metaverse' element={<Metaverse />} /> {/* Remove Navbar and Footer */}
+          <Route path='/golive' element={<Golive />} /> {/* Remove Navbar and Footer */}
+        </Routes>
       </BrowserRouter>
-      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,132 @@
+/* Desktop styles */
+.footer {
+  background-color: #c99abf;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-list li {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.footer-links-list li:hover {
+  color: #333;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-icon-container {
+  margin-right: 20px;
+}
+
+.footer-icon-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-copyright hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 15px;
+  }
+  .footer-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  .footer-links {
+    margin-bottom: 15px;
+  }
+  .footer-links-list {
+    flex-direction: column;
+  }
+  .footer-links-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #666;
+  }
+  .footer-links-list li:hover {
+    color: #333;
+  }
+  .footer-social-icon {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icon-container {
+    margin: 0 10px;
+  }
+  .footer-icon-container img {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-copyright {
+    font-size: 16px;
+    color: #666;
+  }
+  .footer-copyright hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+}

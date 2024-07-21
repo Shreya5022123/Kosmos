@@ -89,7 +89,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-
+ 
   margin-right: 10px;
   border-radius: 5px;
 }
@@ -118,68 +118,121 @@ body {
 
 }
 
+/* Responsive Styles for Mobile View */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+  .nav-centre-1, .nav-center-2 {
+    flex-grow: 0;
+    flex-basis: 100%;
+  }
+  .nav-menu-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu-2 li {
+    margin-bottom: 10px;
+  }
+  .nav-login-cart {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-login-cart button {
+    margin-bottom: 10px;
+  }
+  .nav-cart-count {
+    margin-top: -20px;
+  }
+}
+
 /* Responsive Styles */
 
 /* Mobile Styles */
 
 @media (max-width: 767px) {
   .navbar {
-     flex-direction: column;
-     padding: 15px;
-   }
+    flex-direction: column;
+    padding: 15px;
+    background-color: #ac317f; /* match the desktop background color */
+  }
   .nav-logo {
-     margin-bottom: 10px;
-   }
-  .nav-centre-1 {
-     display: none; /* hide the 2nd div on mobile */
-   }
-  .nav-center {
-     margin-bottom: 10px;
-   }
-  .nav-menu-2 {
-     flex-direction: column;
-   }
-  .nav-menu-2 li {
-     margin-bottom: 10px;
-   }
+    margin-bottom: 10px;
+    text-align: center; /* center the logo */
+  }
+  .nav-logo img {
+    width: 30px; /* reduce the logo size */
+    height: 30px;
+  }
+  .nav-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
   .nav-login-cart {
-     margin-top: 10px;
-   }
+    display: flex;
+    align-items: center;
+  }
   .nav-login-cart button {
-     padding: 10px 20px;
-     font-size: 16px;
-   }
-   
-   /* Add a toggle button to show/hide the 2nd div on mobile */
-  .nav-toggle {
-     display: block;
-     background-color: #444;
-     color: #fff;
-     border: none;
-     padding: 10px 20px;
-     font-size: 16px;
-     cursor: pointer;
-   }
-  .nav-toggle:hover {
-     background-color: #555;
-   }
-   
-   /* Show the 2nd div on mobile when the toggle button is clicked */
-  .nav-centre-1.show {
-     display: block;
-   }
-   
-   /* Additional styles for mobile view */
-  .nav-menu-2 li {
-     text-align: center;
-   }
-  .nav-login-cart {
-     justify-content: center;
-   }
-  .nav-login-cart button {
-     width: 100%;
-   }
+    padding: 10px 750px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
   .nav-login-cart img {
-     margin: 10px auto;
-   }
- }
+    width: 30px; /* reduce the cart icon size */
+    height: 30px;
+  }
+  .nav-cart-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .nav-centre-1 {
+    display: none; /* hide the 2nd div on mobile */
+  }
+  .nav-toggle {
+    display: block;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 40px; /* increase the width of the toggle button */
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* add some space between the toggle button and the menu */
+  }
+  .nav-toggle:hover {
+    background-color: #555;
+  }
+  .nav-centre-1.show {
+    display: block;
+    padding: 10px; /* add some padding to the menu */
+    width: 100%; /* make the dropdown menu full width */
+  }
+  .nav-center-2 {
+    margin-bottom: 10px;
+  }
+  .nav-menu-2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* add some padding to the menu */
+  }
+  .nav-menu-2 li {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px; /* increase the font size */
+  }
+  .nav-menu-2 li a {
+    color: #fff; /* match the desktop link color */
+  }
+}

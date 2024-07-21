@@ -1,0 +1,120 @@
+/* NewsLetter Styles */
+
+.newsletter {
+    max-width: 800px; /* added max-width for better responsiveness */
+    margin: 40px auto; /* increased margin for better spacing */
+    padding: 30px; /* increased padding for better spacing */
+    background: linear-gradient(180deg, rgb(247, 186, 248), rgb(244, 64, 217) 60%);
+    border-radius: 10px; /* added border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .newsletter h1 {
+    font-size: 40px; /* reduced font size for better readability */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333; /* dark gray text color */
+  }
+  
+  .newsletter p {
+    font-size: 18px; /* reduced font size for better readability */
+    color: #080707;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* white background */
+    border-radius: 80px;
+    border: 1px solid #f5deb3; /* wheat border color */
+    padding: 10px; /* added padding */
+    width: 100%; /* full-width input container */
+  }
+  
+  .newsletter input {
+    width: 100%; /* full-width input field */
+    padding: 10px; /* added padding */
+    border: none;
+    outline: none;
+    color: #666;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  
+  .newsletter div button {
+    width: 100px; /* reduced width for better spacing */
+    height: 40px;
+    border-radius: 80px;
+    background: #333; /* dark gray background */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* added transition effect */
+  }
+  
+  .newsletter div button:hover {
+    background: #444; /* added hover effect */
+  }
+  
+  /* Responsive Styles */
+  
+ /* Mobile view (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .newsletter {
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%; /* adjust width to fit mobile screen */
+      border-radius: 10px; /* added border radius */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+    }
+    .newsletter h1 {
+      font-size: 24px; /* adjust font size for mobile screen */
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333; /* dark gray text color */
+    }
+    .newsletter p {
+      font-size: 16px; /* adjust font size for mobile screen */
+      color: #080707;
+      margin-bottom: 20px;
+    }
+    .newsletter div {
+      flex-direction: column; /* changed to column layout for mobile */
+      align-items: center;
+      gap: 10px;
+      background: #fff; /* white background */
+      border-radius: 10px; /* added border radius */
+      padding: 10px; /* added padding */
+    }
+    .newsletter input {
+      padding: 10px; /* adjust padding for mobile screen */
+      font-size: 16px; /* adjust font size for mobile screen */
+      width: 100%; /* full-width input field for mobile */
+      border: none;
+      outline: none;
+      border-radius: 10px; /* added border radius */
+      background-color: rgb(255, 220, 247);
+    }
+    .newsletter button {
+      padding: 10px 20px; /* adjust padding for mobile screen */
+      font-size: 16px; /* adjust font size for mobile screen */
+      width: 100%; /* full-width button for mobile */
+      border: none;
+      outline: none;
+      border-radius: 10px; /* added border radius */
+      background: #333; /* dark gray background */
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease; /* added transition effect */
+    }
+    .newsletter button:hover {
+      background: #444; /* added hover effect */
+    }
+  }
