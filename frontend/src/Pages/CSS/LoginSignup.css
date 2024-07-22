@@ -1,0 +1,119 @@
+.loginsignup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7cbe6;
+    background-image: linear-gradient(to bottom, #f7cbe6, #fff); /* added a subtle gradient background */
+}
+
+.loginsignup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    overflow: hidden; /* added to prevent overflow on mobile devices */
+}
+
+.loginsignup-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* added a subtle text shadow */
+}
+
+.loginsignup-fields {
+    margin-bottom: 20px;
+}
+
+.loginsignup-fields input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center; /* added to center the placeholder text */
+    background-color: #f9f9f9; /* added a light gray background color */
+    transition: background-color 0.3s ease; /* added a transition effect */
+}
+
+.loginsignup-fields input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #333;
+    border-color: #ccc; /* added a light gray border color on focus */
+    background-color: #fff; /* changed the background color on focus */
+}
+
+.loginsignup-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* added a subtle box shadow */
+}
+
+.loginsignup-container button:hover {
+    background-color: #444;
+}
+
+.loginsignup-login {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.loginsignup-login span {
+    color: #c10909;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+.loginsignup-login:hover span {
+    color: #0066cc; /* changed the hover color to a blue shade */
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.loginsignup-agree input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+/* Media queries for mobiles */
+@media only screen and (max-width: 768px) {
+   .loginsignup-container {
+        width: 90%; /* adjust the width to fit smaller screens */
+        padding: 15px; /* reduce padding for smaller screens */
+        border-radius: 15px; /* increase border radius for a more rounded look */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added a subtle box shadow */
+    }
+   .loginsignup-fields input {
+        font-size: 14px; /* reduce font size for smaller screens */
+        padding: 12px; /* increase padding for a more comfortable input field */
+        border-radius: 10px; /* increase border radius for a more rounded look */
+    }
+   .loginsignup-container button {
+        padding: 12px 20px; /* increase padding for a more comfortable button */
+        font-size: 14px; /* reduce font size for smaller screens */
+        border-radius: 10px; /* increase border radius for a more rounded look */
+        margin-bottom: 5px;
+    }
+   .loginsignup-login {
+        font-size: 14px; /* reduce font size for smaller screens */
+    }
+}
+
