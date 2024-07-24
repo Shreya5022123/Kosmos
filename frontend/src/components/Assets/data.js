@@ -10,34 +10,34 @@ import whitedress from './whitedress.glb'
 let data_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "The Modern Soul unisex-adult Polyester Blend Hooded Neck Sweatshirt",
     image: p1_img,
-    new_price: 50.00,
-    old_price: 80.50,
+    new_price: 1700.00,
+    old_price: 2000.50,
     model: 'sweater', // Provide a value for the model property
   },
   {
     id: 2,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     image: p2_img,
-    new_price: 85.00,
-    old_price: 120.50,
+    new_price: 999.00,
+    old_price: 1200.50,
     model: 'jeans', // Provide a value for the model property
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Womens Sleeveless Sport Crop Top and Shorts Gym Fitness",
     image: p3_img,
-    new_price: 60.00,
-    old_price: 100.50,
+    new_price: 600.00,
+    old_price: 1000.50,
     model: 'Model 3', // Provide a value for the model property
   },
   {
     id: 4,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     image: p4_img,
-    new_price: 100.00,
-    old_price: 150.00,
+    new_price: 700.00,
+    old_price: 850.00,
     model: 'Model 4', // Provide a value for the model property
   },
 ];

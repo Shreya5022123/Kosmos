@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className="nav-logo">
-        <img src={logo} alt="" />
+      <div className="nav-logo" >
+        <img src={logo}  alt="" width='40px' />
         <p>Kosmos</p>
       </div>
       <div className='nav-centre-1'>
