@@ -10,6 +10,8 @@ import Cart from './Pages/Cart.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Metaverse from './Pages/Metaverse.jsx';
 import Golive from './Pages/Golive.jsx';
+import VirtualTryOn from './components/ProductDisplay/VirtualTryOn.jsx';
+import ProductDisplay from './components/ProductDisplay/ProductDisplay.jsx';
 
 function App() {
   return (
@@ -75,6 +77,7 @@ function App() {
           }/>
           <Route path='/metaverse' element={<Metaverse />} /> {/* Remove Navbar and Footer */}
           <Route path='/golive' element={<Golive />} /> {/* Remove Navbar and Footer */}
+          <Route path='/VirtualTryOn' element={<VirtualTryOn />} />
         </Routes>
       </BrowserRouter>
     </div>

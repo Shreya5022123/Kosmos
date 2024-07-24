@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import VirtualTryon from './VirtualTryon.jsx'; // Import the Virtual Tryon file
+// import VirtualTryon from './VirtualTryOn.jsx'; // Import the Virtual Tryon file
 import './ProductDisplay.css';
 import star_icon from '../Assets/star_icon.png';
 import star_dull_icon from '../Assets/star_dull_icon.png';
@@ -46,15 +46,16 @@ const ProductDisplay = (props) =>{
                     </div>
             
                 </div>
-                <Link to="/virtual-tryon">
-                    <button>Virtual Tryon</button>
-                </Link>
+                
+                    <button><Link to="/VirtualTryOn">Virtual-Tryon</Link></button>
+                
                 <br/>
                 <button>Add to Cart</button>
                 <p className='productdisplay-right-category'><span>Tags:</span>Modern,Latest</p>
             </div>
-
+          
         </div>
     )
 }
+
 export default ProductDisplay;
